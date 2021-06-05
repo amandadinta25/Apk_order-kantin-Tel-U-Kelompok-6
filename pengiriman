@@ -1,4 +1,3 @@
-
 package entitas_kelompok_6;
 
 public class driver_kelompok_6 extends user_kelompok_6{
@@ -8,21 +7,25 @@ public class driver_kelompok_6 extends user_kelompok_6{
     private String nohpdriver;
     
  
-
+    // nama driver// 
     public void setNamadriver(String Nama_driver){
         this.namadriver = Nama_driver;
-    }
-    public void setNohpdriver(String Nohp_driver){
-        this.nohpdriver = Nohp_driver;
     }
 
     public String getNamadriver(){
         return namadriver;
     }
+
+    // nomor hp driver//
+    public void setNohpdriver(String Nohp_driver){
+        this.nohpdriver = Nohp_driver;
+    }
+
     public String getNohpdriver(){
         return nohpdriver;
     }
     
+    // info driver//
     public void infoDriver(user_kelompok_6 user3){
         
         System.out.println(" ID Driver          : " + user3.getId_user());
