@@ -1,35 +1,57 @@
-package entitas_kelompok_6;
 
-public class driver_kelompok_6 extends user_kelompok_6{
+package relasi_kelompok_6;
+import entitas_kelompok_6.driver_kelompok_6;
+import entitas_kelompok_6.list_menu_kelompok_6;
+
+
+public class pengiriman_kelompok_6 extends driver_kelompok_6{
+    
+    private String id_order_pengiriman;
+    private String alamat_pelanggan_pengiriman;
+    private String waktu_pengiriman;
+
     
 
-    private String namadriver;
-    private String nohpdriver;
-    
- 
-    // nama driver// 
-    public void setNamadriver(String Nama_driver){
-        this.namadriver = Nama_driver;
-    }
-
-    public String getNamadriver(){
-        return namadriver;
-    }
-
-    // nomor hp driver//
-    public void setNohpdriver(String Nohp_driver){
-        this.nohpdriver = Nohp_driver;
-    }
-
-    public String getNohpdriver(){
-        return nohpdriver;
-    }
-    
-    // info driver//
-    public void infoDriver(user_kelompok_6 user3){
+    // ID pengiriman//
+    public String getId_order_pengiriman(){
         
-        System.out.println(" ID Driver          : " + user3.getId_user());
-        System.out.println(" Nama Driver        : " + getNamadriver());
-        System.out.println(" No Hp Driver       : " + getNohpdriver());
+        return id_order_pengiriman;
+    }
+
+    public void setId_order_pengiriman(String Id_Order_Pengiriman){
+   
+        id_order_pengiriman = Id_Order_Pengiriman;
+    }
+
+    // alamat pelanggan pengirim//
+    public String getAlamat_pelanggan_pengiriman(){
+        
+        return alamat_pelanggan_pengiriman;
+    }
+
+     public void setAlamat_pelanggan_pengiriman(String Alamat_Pelanggan_Pengiriman){
+        
+        alamat_pelanggan_pengiriman = Alamat_Pelanggan_Pengiriman;
+    }
+
+    // waktu pengiriman//
+    public String getWaktu_pengiriman(){
+        
+        return waktu_pengiriman;
+    }
+    
+    public void setWaktu_pengiriman(String Waktu_Pengiriman){
+        
+        waktu_pengiriman = Waktu_Pengiriman;
+    }
+    
+    // info pengantar//
+    public void infoPengantaran(){
+        
+            System.out.println(" ");
+            System.out.println("ID order            : " + getId_order_pengiriman());
+            System.out.println("Waktu Pengiriman    : " + getWaktu_pengiriman());
+            System.out.println("Alamat Pelanggan    : " + getAlamat_pelanggan_pengiriman());
+            System.out.println(" ");
     }
 }
