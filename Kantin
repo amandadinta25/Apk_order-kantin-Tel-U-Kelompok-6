@@ -4,38 +4,50 @@ package entitas_kelompok_6;
 
 public class kantin_kelompok_6 {
     
+    //Deklarasi variabel yang dibutuhkan
     private String id_kantin;
     private String alamat_kantin;
     private String jadwal_kantin;
     
-    
+    //Membuat mengembalikan untuk id_kantin
     public String getId_kantin(){
         
         return id_kantin;
     }
     
+    //Membuat mengembalikan untuk alamat_kantin
     public String getAlamat_kantin(){
+        
         return alamat_kantin;
     }
     
+    //Membuat mengembalikan untuk jadwal_kantin
     public String getJadwal_kantin(){
+        
         return jadwal_kantin;
     }
-         
+    
+    //Membuat menambahkan untuk alamat_kantin
     public void setAlamat_kantin(String Alamat_Kantin){
+        
         alamat_kantin = Alamat_Kantin;
     }
     
+    //Membuat menambahkan untuk jadwal_kantin
     public void setJadwal_kantin(String Jadwal_Kantin){
+        
         jadwal_kantin = Jadwal_Kantin;
     }
     
+    //Membuat menambahkan untuk id_kantin
     public void setId_kantin(String Id_Kantin){
         
         id_kantin = Id_Kantin;
     }
     
+    //menampilkan info data dari kantin
     public void infoKantin(){
+        
         System.out.println(" ID Kantin          : " + getId_kantin());
         System.out.println(" Alamat Kantin      : " + getAlamat_kantin());
         System.out.println(" Jadwal Kantin      : " + getJadwal_kantin());
